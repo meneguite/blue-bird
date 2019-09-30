@@ -1,0 +1,16 @@
+{
+  "name": "Blue Bird",
+  "short_name": "blue_bird",
+  "theme_color": "#1e90ff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
