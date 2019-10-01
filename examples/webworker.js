@@ -1,11 +1,11 @@
 // index.js
 const worker = new Worker("worker.js");
 
-worker.postMessage([10, 100]);
-
 worker.onmessage = function(e) {
   console.log("Message received from worker", e.data);
 };
+
+worker.postMessage([10, 100]);
 
 // worker.js
 onmessage = function(e) {
@@ -15,7 +15,6 @@ onmessage = function(e) {
     postMessage("Please write two numbers");
     return;
   }
-
   console.log("Worker: Posting message back to main script");
   postMessage("Result: " + result);
 };
