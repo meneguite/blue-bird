@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#1E90FF" />
     <link rel="icons" type="image/png" sizes="144x144" href="icon-144x144.png" />
     <title>Blue Bird</title>
@@ -42,21 +41,6 @@
     <div id="restart-button" class="btn-restart" style="display: none">
       <button onclick="restartGame()">Restart</button>
     </div>
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register("sw.js", { scope: "." })
-            .then(registration => {
-              console.log("ServiceWorker registration successful");
-            })
-            .catch(err => {
-              console.log("ServiceWorker registration failed:", err);
-            });
-        });
-      }
-    </script>
 
     <script src="blue-bird.js"></script>
   </body>
