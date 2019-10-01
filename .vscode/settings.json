@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 120,
+  "editor.rulers": [120],
+  "eslint.enable": false,
+  "eslint.autoFixOnSave": false,
+  "workbench.colorCustomizations": {
+    "editorUnnecessaryCode.border": "#ff0000"
+  }
+}
