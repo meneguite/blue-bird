@@ -2,8 +2,14 @@ var myGamePiece;
 var myObstacles = [];
 var myScore;
 
-const appWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 646;
-const appHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 360;
+let appWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 646;
+if (appWidth > 800) {
+  appWidth = 646;
+}
+let appHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 360;
+if (appHeight > 500) {
+  appHeight = 360;
+}
 
 var myGameArea = {
   speed: -1,
